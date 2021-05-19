@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/luisbenavides/custom projects/Mars-Rovers/src/main/java/me/lbenavides</OriginalElement>
+  <nodes>
+    <node x="0.0" y="1481.0">me.lbenavides.infrastructure.primary.RoverDto.RoverDtoBuilder</node>
+    <node x="680.4924820889898" y="2111.0">me.lbenavides.infrastructure.config.InstanceManager</node>
+    <node x="434.2008154223231" y="312.0">me.lbenavides.core.model.Direction</node>
+    <node x="263.20081542232305" y="1829.0">me.lbenavides.infrastructure.primary.CommandsReader</node>
+    <node x="667.2008154223231" y="389.0">me.lbenavides.core.model.Plateau</node>
+    <node x="793.2008154223231" y="1895.0">me.lbenavides.core.service.RoverMovementsImpl</node>
+    <node x="518.6174820889898" y="2306.0">me.lbenavides.App</node>
+    <node x="-38.809595405765435" y="442.8650268819183">me.lbenavides.infrastructure.primary.RoverDto</node>
+    <node x="323.4085477941179" y="1591.5">me.lbenavides.infrastructure.primary.mapper.RoverMapper</node>
+    <node x="1039.200815422323" y="1906.5">me.lbenavides.infrastructure.secondary.PrinterPortImpl</node>
+    <node x="995.9508154223231" y="434.0">me.lbenavides.core.exception.OutOfLimitsException</node>
+    <node x="664.7706990007537" y="0.0">me.lbenavides.core.model.Position</node>
+    <node x="933.9508154223231" y="1603.0">me.lbenavides.core.secondary.PrinterPort</node>
+    <node x="839.4508154223231" y="710.0">me.lbenavides.core.model.Rover.RoverBuilder</node>
+    <node x="815.2008154223231" y="1066.0">me.lbenavides.core.model.Rover</node>
+    <node x="1217.950815422323" y="356.0">me.lbenavides.core.model.Movement</node>
+    <node x="678.4508154223231" y="1603.0">me.lbenavides.core.RoverMovements</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="me.lbenavides.core.secondary.PrinterPort" target="me.lbenavides.core.model.Rover" relationship="DEPENDENCY">
+      <point x="0.0" y="-26.0" />
+      <point x="1032.450815422323" y="1459.0" />
+      <point x="974.2008154223231" y="1459.0" />
+      <point x="0.0" y="170.5" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover" target="me.lbenavides.core.model.Rover.RoverBuilder" relationship="CREATE">
+      <point x="-24.461538461538453" y="-170.5" />
+      <point x="949.7392769607847" y="994.0" />
+      <point x="884.4508154223231" y="994.0" />
+      <point x="-90.0" y="126.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover.RoverBuilder" target="me.lbenavides.core.model.Rover" relationship="CREATE">
+      <point x="90.0" y="126.0" />
+      <point x="1064.450815422323" y="984.0" />
+      <point x="1151.4581990007537" y="984.0" />
+      <point x="1151.4581990007537" y="1044.0" />
+      <point x="998.6623538838616" y="1044.0" />
+      <point x="24.461538461538453" y="-170.5" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover.RoverBuilder" target="me.lbenavides.core.model.Direction" relationship="DEPENDENCY">
+      <point x="-120.0" y="-126.0" />
+      <point x="854.4508154223231" y="689.0" />
+      <point x="529.7008154223231" y="689.0" />
+      <point x="529.7008154223231" y="659.0" />
+      <point x="487.4508154223231" y="659.0" />
+      <point x="-53.25" y="148.0" />
+    </edge>
+    <edge source="me.lbenavides.App" target="me.lbenavides.infrastructure.config.InstanceManager" relationship="DEPENDENCY">
+      <point x="36.25" y="-37.5" />
+      <point x="627.3674820889898" y="2280.0" />
+      <point x="803.4924820889898" y="2280.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover" target="me.lbenavides.core.exception.OutOfLimitsException" relationship="CREATE">
+      <point x="73.38461538461536" y="-170.5" />
+      <point x="1047.5854308069383" y="1004.0" />
+      <point x="1332.700815422323" y="1004.0" />
+      <point x="1332.700815422323" y="659.0" />
+      <point x="1169.0320512820513" y="659.0" />
+      <point x="1169.0320512820513" y="639.0" />
+      <point x="1096.950815422323" y="639.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="me.lbenavides.core.service.RoverMovementsImpl" target="me.lbenavides.core.model.Rover" relationship="DEPENDENCY">
+      <point x="-28.25" y="-49.0" />
+      <point x="877.9508154223231" y="1808.0" />
+      <point x="900.9508154223231" y="1808.0" />
+      <point x="900.9508154223231" y="1459.0" />
+      <point x="974.2008154223231" y="1459.0" />
+      <point x="0.0" y="170.5" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.secondary.PrinterPortImpl" target="me.lbenavides.core.secondary.PrinterPort" relationship="REALIZATION">
+      <point x="-49.25" y="-37.5" />
+      <point x="1088.450815422323" y="1808.0" />
+      <point x="1098.1174820889898" y="1808.0" />
+      <point x="65.66666666666674" y="26.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Plateau" target="me.lbenavides.core.model.Position" relationship="TO_ONE">
+      <point x="65.5" y="-71.0" />
+      <point x="863.7008154223231" y="282.0" />
+      <point x="942.8956990007537" y="282.0" />
+      <point x="942.8956990007537" y="272.0" />
+      <point x="799.7706990007537" y="272.0" />
+      <point x="45.0" y="126.0" />
+    </edge>
+    <edge source="me.lbenavides.App" target="me.lbenavides.infrastructure.primary.CommandsReader" relationship="DEPENDENCY">
+      <point x="-36.25" y="-37.5" />
+      <point x="554.8674820889898" y="2280.0" />
+      <point x="396.20081542232305" y="2280.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Movement" target="me.lbenavides.core.model.Rover" relationship="TO_ONE">
+      <point x="78.375" y="104.0" />
+      <point x="1400.825815422323" y="689.0" />
+      <point x="1359.176748680241" y="689.0" />
+      <point x="1359.176748680241" y="1024.0" />
+      <point x="1096.5085077300155" y="1024.0" />
+      <point x="122.30769230769232" y="-170.5" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover.RoverBuilder" target="me.lbenavides.core.model.Movement" relationship="DEPENDENCY">
+      <point x="60.0" y="-126.0" />
+      <point x="1034.450815422323" y="669.0" />
+      <point x="1113.5320512820513" y="669.0" />
+      <point x="1113.5320512820513" y="629.0" />
+      <point x="1244.075815422323" y="629.0" />
+      <point x="-78.375" y="104.0" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.primary.RoverDto.RoverDtoBuilder" target="me.lbenavides.infrastructure.primary.RoverDto" relationship="INNER_CLASS">
+      <point x="-91.66666666666674" y="-148.0" />
+      <point x="45.83333333333326" y="1459.0" />
+      <point x="8.190404594234565" y="1459.0" />
+      <point x="-94.0" y="104.0" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.config.InstanceManager" target="me.lbenavides.core.service.RoverMovementsImpl" relationship="CREATE">
+      <point x="30.75" y="-71.5" />
+      <point x="834.2424820889898" y="2080.0" />
+      <point x="906.2008154223231" y="2080.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover" target="me.lbenavides.core.model.Position" relationship="DEPENDENCY">
+      <point x="-146.76923076923072" y="-170.5" />
+      <point x="827.4315846530924" y="1044.0" />
+      <point x="423.7008154223231" y="1044.0" />
+      <point x="423.7008154223231" y="292.0" />
+      <point x="523.7322657428358" y="292.0" />
+      <point x="523.7322657428358" y="272.0" />
+      <point x="709.7706990007537" y="272.0" />
+      <point x="-45.0" y="126.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover.RoverBuilder" target="me.lbenavides.core.model.Movement" relationship="TO_MANY">
+      <point x="120.0" y="-126.0" />
+      <point x="1094.450815422323" y="649.0" />
+      <point x="1343.700815422323" y="649.0" />
+      <point x="1343.700815422323" y="639.0" />
+      <point x="1348.575815422323" y="639.0" />
+      <point x="26.125" y="104.0" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.primary.mapper.RoverMapper" target="me.lbenavides.core.model.Position" relationship="CREATE">
+      <point x="-44.5" y="-37.5" />
+      <point x="367.9085477941179" y="1459.0" />
+      <point x="349.8333333333333" y="1459.0" />
+      <point x="349.8333333333333" y="292.0" />
+      <point x="523.7322657428358" y="292.0" />
+      <point x="523.7322657428358" y="272.0" />
+      <point x="709.7706990007537" y="272.0" />
+      <point x="-45.0" y="126.0" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.primary.CommandsReader" target="me.lbenavides.infrastructure.primary.RoverDto.RoverDtoBuilder" relationship="DEPENDENCY">
+      <point x="-106.39999999999998" y="-115.0" />
+      <point x="289.80081542232307" y="1808.0" />
+      <point x="137.5" y="1808.0" />
+      <point x="0.0" y="148.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Movement" target="me.lbenavides.core.model.Rover" relationship="DEPENDENCY">
+      <point x="-26.125" y="104.0" />
+      <point x="1296.325815422323" y="639.0" />
+      <point x="1310.700815422323" y="639.0" />
+      <point x="1310.700815422323" y="984.0" />
+      <point x="1151.4581990007537" y="984.0" />
+      <point x="1151.4581990007537" y="1044.0" />
+      <point x="998.6623538838616" y="1044.0" />
+      <point x="24.461538461538453" y="-170.5" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover" target="me.lbenavides.core.model.Movement" relationship="DEPENDENCY">
+      <point x="48.923076923076906" y="-170.5" />
+      <point x="1023.1238923454" y="994.0" />
+      <point x="1321.700815422323" y="994.0" />
+      <point x="1321.700815422323" y="669.0" />
+      <point x="1113.5320512820513" y="669.0" />
+      <point x="1113.5320512820513" y="629.0" />
+      <point x="1244.075815422323" y="629.0" />
+      <point x="-78.375" y="104.0" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.primary.mapper.RoverMapper" target="me.lbenavides.core.model.Plateau" relationship="CREATE">
+      <point x="14.833333333333371" y="-37.5" />
+      <point x="427.2418811274513" y="1439.0" />
+      <point x="371.8333333333333" y="1439.0" />
+      <point x="371.8333333333333" y="679.0" />
+      <point x="657.8258154223231" y="679.0" />
+      <point x="657.8258154223231" y="639.0" />
+      <point x="732.7008154223231" y="639.0" />
+      <point x="-65.5" y="71.0" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.secondary.PrinterPortImpl" target="me.lbenavides.core.model.Rover" relationship="DEPENDENCY">
+      <point x="49.25" y="-37.5" />
+      <point x="1186.950815422323" y="1808.0" />
+      <point x="1142.950815422323" y="1808.0" />
+      <point x="1142.950815422323" y="1459.0" />
+      <point x="974.2008154223231" y="1459.0" />
+      <point x="0.0" y="170.5" />
+    </edge>
+    <edge source="me.lbenavides.core.service.RoverMovementsImpl" target="me.lbenavides.core.RoverMovements" relationship="REALIZATION">
+      <point x="-84.75" y="-49.0" />
+      <point x="821.4508154223231" y="1808.0" />
+      <point x="855.1174820889898" y="1808.0" />
+      <point x="70.66666666666674" y="26.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover" target="me.lbenavides.core.model.Direction" relationship="DEPENDENCY">
+      <point x="-122.30769230769226" y="-170.5" />
+      <point x="851.8931231146308" y="1034.0" />
+      <point x="529.7008154223231" y="1034.0" />
+      <point x="529.7008154223231" y="659.0" />
+      <point x="487.4508154223231" y="659.0" />
+      <point x="-53.25" y="148.0" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.config.InstanceManager" target="me.lbenavides.infrastructure.secondary.PrinterPortImpl" relationship="CREATE">
+      <point x="92.25" y="-71.5" />
+      <point x="895.7424820889898" y="2090.0" />
+      <point x="1137.700815422323" y="2090.0" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Direction" target="me.lbenavides.core.model.Position" relationship="TO_ONE">
+      <point x="53.25" y="-148.0" />
+      <point x="593.9508154223231" y="282.0" />
+      <point x="942.8956990007537" y="282.0" />
+      <point x="942.8956990007537" y="272.0" />
+      <point x="799.7706990007537" y="272.0" />
+      <point x="45.0" y="126.0" />
+    </edge>
+    <edge source="me.lbenavides.core.service.RoverMovementsImpl" target="me.lbenavides.core.secondary.PrinterPort" relationship="DEPENDENCY">
+      <point x="84.75" y="-49.0" />
+      <point x="990.9508154223231" y="1808.0" />
+      <point x="1032.450815422323" y="1808.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="me.lbenavides.core.RoverMovements" target="me.lbenavides.core.model.Rover" relationship="DEPENDENCY">
+      <point x="0.0" y="-26.0" />
+      <point x="784.4508154223231" y="1459.0" />
+      <point x="974.2008154223231" y="1459.0" />
+      <point x="0.0" y="170.5" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover.RoverBuilder" target="me.lbenavides.core.model.Rover" relationship="INNER_CLASS">
+      <point x="0.0" y="126.0" />
+      <point x="0.0" y="-170.5" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.config.InstanceManager" target="me.lbenavides.infrastructure.primary.CommandsReader" relationship="CREATE">
+      <point x="-92.25" y="-71.5" />
+      <point x="711.2424820889898" y="2090.0" />
+      <point x="396.20081542232305" y="2090.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.primary.RoverDto" target="me.lbenavides.infrastructure.primary.RoverDto.RoverDtoBuilder" relationship="CREATE">
+      <point x="0.0" y="104.0" />
+      <point x="102.19040459423456" y="1459.0" />
+      <point x="137.5" y="1459.0" />
+      <point x="0.0" y="-148.0" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.primary.RoverDto.RoverDtoBuilder" target="me.lbenavides.infrastructure.primary.RoverDto" relationship="CREATE">
+      <point x="91.66666666666663" y="-148.0" />
+      <point x="229.16666666666663" y="1459.0" />
+      <point x="271.28031438536897" y="1459.0" />
+      <point x="271.28031438536897" y="1449.0" />
+      <point x="196.19040459423456" y="1449.0" />
+      <point x="94.0" y="104.0" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.primary.mapper.RoverMapper" target="me.lbenavides.core.model.Rover" relationship="DEPENDENCY">
+      <point x="74.16666666666663" y="-37.5" />
+      <point x="486.57521446078454" y="1459.0" />
+      <point x="974.2008154223231" y="1459.0" />
+      <point x="0.0" y="170.5" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.primary.CommandsReader" target="me.lbenavides.core.RoverMovements" relationship="DEPENDENCY">
+      <point x="106.4" y="-115.0" />
+      <point x="502.6008154223231" y="1808.0" />
+      <point x="741.7424820889898" y="1808.0" />
+      <point x="741.7424820889898" y="1798.0" />
+      <point x="784.4508154223231" y="1798.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.primary.mapper.RoverMapper" target="me.lbenavides.core.model.Movement" relationship="DEPENDENCY">
+      <point x="44.5" y="-37.5" />
+      <point x="456.9085477941179" y="1429.0" />
+      <point x="382.8333333333333" y="1429.0" />
+      <point x="382.8333333333333" y="669.0" />
+      <point x="1113.5320512820513" y="669.0" />
+      <point x="1113.5320512820513" y="629.0" />
+      <point x="1244.075815422323" y="629.0" />
+      <point x="-78.375" y="104.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover.RoverBuilder" target="me.lbenavides.core.model.Plateau" relationship="DEPENDENCY">
+      <point x="-90.0" y="-126.0" />
+      <point x="884.4508154223231" y="679.0" />
+      <point x="657.8258154223231" y="679.0" />
+      <point x="657.8258154223231" y="639.0" />
+      <point x="732.7008154223231" y="639.0" />
+      <point x="-65.5" y="71.0" />
+    </edge>
+    <edge source="me.lbenavides.core.service.RoverMovementsImpl" target="me.lbenavides.core.secondary.PrinterPort" relationship="TO_ONE">
+      <point x="28.25" y="-49.0" />
+      <point x="934.4508154223231" y="1808.0" />
+      <point x="966.7841487556565" y="1808.0" />
+      <point x="-65.66666666666663" y="26.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover" target="me.lbenavides.core.model.Position" relationship="TO_ONE">
+      <point x="146.76923076923077" y="-170.5" />
+      <point x="1120.9700461915538" y="1034.0" />
+      <point x="1437.450815422323" y="1034.0" />
+      <point x="1437.450815422323" y="282.0" />
+      <point x="942.8956990007537" y="282.0" />
+      <point x="942.8956990007537" y="272.0" />
+      <point x="799.7706990007537" y="272.0" />
+      <point x="45.0" y="126.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover" target="me.lbenavides.core.model.Plateau" relationship="DEPENDENCY">
+      <point x="-97.84615384615381" y="-170.5" />
+      <point x="876.3546615761693" y="1024.0" />
+      <point x="657.8258154223231" y="1024.0" />
+      <point x="657.8258154223231" y="639.0" />
+      <point x="732.7008154223231" y="639.0" />
+      <point x="-65.5" y="71.0" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.primary.mapper.RoverMapper" target="me.lbenavides.infrastructure.primary.RoverDto" relationship="DEPENDENCY">
+      <point x="-74.16666666666674" y="-37.5" />
+      <point x="338.24188112745117" y="1459.0" />
+      <point x="271.28031438536897" y="1459.0" />
+      <point x="271.28031438536897" y="1449.0" />
+      <point x="196.19040459423456" y="1449.0" />
+      <point x="94.0" y="104.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover.RoverBuilder" target="me.lbenavides.core.model.Position" relationship="TO_ONE">
+      <point x="30.0" y="-126.0" />
+      <point x="1004.4508154223231" y="659.0" />
+      <point x="985.4508154223231" y="659.0" />
+      <point x="985.4508154223231" y="282.0" />
+      <point x="942.8956990007537" y="282.0" />
+      <point x="942.8956990007537" y="272.0" />
+      <point x="799.7706990007537" y="272.0" />
+      <point x="45.0" y="126.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Plateau" target="me.lbenavides.core.model.Position" relationship="DEPENDENCY">
+      <point x="-65.5" y="-71.0" />
+      <point x="732.7008154223231" y="292.0" />
+      <point x="523.7322657428358" y="292.0" />
+      <point x="523.7322657428358" y="272.0" />
+      <point x="709.7706990007537" y="272.0" />
+      <point x="-45.0" y="126.0" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.primary.CommandsReader" target="me.lbenavides.infrastructure.primary.mapper.RoverMapper" relationship="DEPENDENCY">
+      <point x="0.0" y="-115.0" />
+      <point x="396.20081542232305" y="1808.0" />
+      <point x="412.4085477941179" y="1808.0" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover.RoverBuilder" target="me.lbenavides.core.model.Position" relationship="DEPENDENCY">
+      <point x="0.0" y="-126.0" />
+      <point x="974.4508154223231" y="292.0" />
+      <point x="523.7322657428358" y="292.0" />
+      <point x="523.7322657428358" y="272.0" />
+      <point x="709.7706990007537" y="272.0" />
+      <point x="-45.0" y="126.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover" target="me.lbenavides.core.model.Direction" relationship="TO_ONE">
+      <point x="-73.38461538461536" y="-170.5" />
+      <point x="900.8162000377077" y="1014.0" />
+      <point x="668.8258154223231" y="1014.0" />
+      <point x="668.8258154223231" y="649.0" />
+      <point x="593.9508154223231" y="649.0" />
+      <point x="53.25" y="148.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover" target="me.lbenavides.core.model.Plateau" relationship="TO_ONE">
+      <point x="-48.923076923076906" y="-170.5" />
+      <point x="925.2777384992462" y="1004.0" />
+      <point x="809.2008154223231" y="1004.0" />
+      <point x="809.2008154223231" y="639.0" />
+      <point x="863.7008154223231" y="639.0" />
+      <point x="65.5" y="71.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Direction" target="me.lbenavides.core.model.Position" relationship="DEPENDENCY">
+      <point x="-53.25" y="-148.0" />
+      <point x="487.4508154223231" y="292.0" />
+      <point x="523.7322657428358" y="292.0" />
+      <point x="523.7322657428358" y="272.0" />
+      <point x="709.7706990007537" y="272.0" />
+      <point x="-45.0" y="126.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover" target="me.lbenavides.core.model.Movement" relationship="TO_MANY">
+      <point x="97.84615384615381" y="-170.5" />
+      <point x="1072.046969268477" y="1014.0" />
+      <point x="1343.700815422323" y="1014.0" />
+      <point x="1343.700815422323" y="639.0" />
+      <point x="1348.575815422323" y="639.0" />
+      <point x="26.125" y="104.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover.RoverBuilder" target="me.lbenavides.core.exception.OutOfLimitsException" relationship="CREATE">
+      <point x="90.0" y="-126.0" />
+      <point x="1064.450815422323" y="659.0" />
+      <point x="1169.0320512820513" y="659.0" />
+      <point x="1169.0320512820513" y="639.0" />
+      <point x="1096.950815422323" y="639.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover.RoverBuilder" target="me.lbenavides.core.model.Plateau" relationship="TO_ONE">
+      <point x="-30.0" y="-126.0" />
+      <point x="944.4508154223231" y="649.0" />
+      <point x="809.2008154223231" y="649.0" />
+      <point x="809.2008154223231" y="639.0" />
+      <point x="863.7008154223231" y="639.0" />
+      <point x="65.5" y="71.0" />
+    </edge>
+    <edge source="me.lbenavides.core.model.Rover.RoverBuilder" target="me.lbenavides.core.model.Direction" relationship="TO_ONE">
+      <point x="-60.0" y="-126.0" />
+      <point x="914.4508154223231" y="659.0" />
+      <point x="668.8258154223231" y="659.0" />
+      <point x="668.8258154223231" y="649.0" />
+      <point x="593.9508154223231" y="649.0" />
+      <point x="53.25" y="148.0" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.primary.CommandsReader" target="me.lbenavides.infrastructure.primary.RoverDto" relationship="DEPENDENCY">
+      <point x="-53.19999999999999" y="-115.0" />
+      <point x="343.00081542232306" y="1798.0" />
+      <point x="285.49999999999994" y="1798.0" />
+      <point x="285.49999999999994" y="1459.0" />
+      <point x="271.28031438536897" y="1459.0" />
+      <point x="271.28031438536897" y="1449.0" />
+      <point x="196.19040459423456" y="1449.0" />
+      <point x="94.0" y="104.0" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.primary.CommandsReader" target="me.lbenavides.core.RoverMovements" relationship="TO_ONE">
+      <point x="53.19999999999999" y="-115.0" />
+      <point x="449.40081542232303" y="1798.0" />
+      <point x="713.7841487556565" y="1798.0" />
+      <point x="-70.66666666666663" y="26.0" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.config.InstanceManager" target="me.lbenavides.core.RoverMovements" relationship="DEPENDENCY">
+      <point x="-30.75" y="-71.5" />
+      <point x="772.7424820889898" y="2090.0" />
+      <point x="741.7424820889898" y="2090.0" />
+      <point x="741.7424820889898" y="1798.0" />
+      <point x="784.4508154223231" y="1798.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="me.lbenavides.infrastructure.primary.mapper.RoverMapper" target="me.lbenavides.core.model.Direction" relationship="DEPENDENCY">
+      <point x="-14.833333333333371" y="-37.5" />
+      <point x="397.57521446078454" y="1449.0" />
+      <point x="360.8333333333333" y="1449.0" />
+      <point x="360.8333333333333" y="689.0" />
+      <point x="529.7008154223231" y="689.0" />
+      <point x="529.7008154223231" y="659.0" />
+      <point x="487.4508154223231" y="659.0" />
+      <point x="-53.25" y="148.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.3770110422684174" showDependencies="true" x="308.3743266123347" y="295.397444892209" />
+  <SelectedNodes>
+    <node>me.lbenavides.infrastructure.primary.RoverDto</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
