@@ -1,6 +1,6 @@
 # Mars Rovers
 
-Hi interviewer I did this project using hexagonal architecture, due I found it fascinating and helps a lot with maintainability issues, I also attached a UML diagram to show the structure.
+Hi interviewer I did this project using hexagonal architecture, due I found it fascinating and helps a lot with maintainability issues, I also attached a UML diagram to show the structure (I created it using Intellij IDEA).
 
 
 ## Assumptions
