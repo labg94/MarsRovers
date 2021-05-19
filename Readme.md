@@ -15,3 +15,18 @@ Hi interviewer I did this project using hexagonal architecture, due I found it f
 
  it took me a bit longer than 3 hours (around 5) due I focus on the best practices using TDD and clean code then trying 
  to refactor some code, I think it will explain itself better than any comment that I can make.
+
+
+## how to run it
+
+first you should run inside the main folder (where is this file ✌🏻)
+
+        `mvn clean install`
+
+then when it finishes run the following command
+
+     ` java -cp target/MarsRovers-1.0-SNAPSHOT.jar me.lbenavides.App`
+
+finally, when the program ask you for a file, you can use any you want (following the format explained in the task),
+but I let you example.txt to try.
+
