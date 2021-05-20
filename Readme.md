@@ -5,11 +5,11 @@ Hi interviewer I did this project using hexagonal architecture, due I found it f
 
 ## Assumptions
 
-    1 It only mentioned the limits of the plateau and that's it, so if the rover exceeds the limits should be count as lost
+1. It only mentioned the limits of the plateau and that's it, so if the rover exceeds the limits should be count as lost
 
-    2 also if the rover starts in a position out of the bounds counts as lost
+2. also if the rover starts in a position out of the bounds counts as lost
 
-    3 in case the coordinates where given in a bad way the rover will have the default position  0 0 N
+3. in case the coordinates where given in a bad way the rover will have the default position  0 0 N
 
 ## Comments
 
@@ -21,11 +21,15 @@ Hi interviewer I did this project using hexagonal architecture, due I found it f
 
 first you should run inside the main folder (where is this file ✌🏻)
 
-        `mvn clean install`
+```maven
+mvn clean install
+```
 
 then when it finishes run the following command
 
-     ` java -cp target/MarsRovers-1.0-SNAPSHOT.jar me.lbenavides.App`
+```bash
+java -cp target/MarsRovers-1.0-SNAPSHOT.jar me.lbenavides.App
+```
 
 finally, when the program ask you for a file, you can use any you want (following the format explained in the task),
 but I let you example.txt to try.
